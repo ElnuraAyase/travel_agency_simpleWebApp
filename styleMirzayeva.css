@@ -1,0 +1,89 @@
+body {
+  font-family: sans-serif;
+  background-color: #e8eaf6;
+}
+
+header {
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+#title {
+  animation: titleColorChange 5s infinite;
+  color: #2ecc71;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+@keyframes titleColorChange {
+  from {
+    color: #2ecc71;
+  }
+
+  50% {
+    color: #007bff;
+  }
+
+  60% {
+    color: #b2ebf2;
+  }
+
+  80% {
+    color: #90ee90;
+  }
+
+  to {
+    color: #d95b43;
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav a {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #007bff;
+}
+
+.about-box {
+  background-color: #fff;
+  padding: 10px;
+  margin-top: 40px;
+  width: 300px;
+  cursor: pointer;
+  border: 2px solid #43a047;
+  text-align: center;
+  position: relative;
+}
+
+.about-box:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-box .close-button {
+  border: none;
+  background-color: transparent;
+  color: #007bff;
+  padding: 5px 10px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+img {
+  width: 100px;
+  height: auto;
+}
